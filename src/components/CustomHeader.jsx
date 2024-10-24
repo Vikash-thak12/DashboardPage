@@ -11,8 +11,8 @@ const CustomHeader = () => {
         <Flex align="center" gap={"3rem"}>
             <Search allowClear placeholder="Search Here" />
             <Flex align="center" gap="3rem">
-                <MessageOutlined className="text-2xl bg-green-300 p-2 rounded-md cursor-pointer hover:bg-[#4f6f52]" />
-                <NotificationOutlined className="text-2xl bg-green-300 p-2 rounded-md cursor-pointer hover:bg-[#4f6f52]" />
+                <MessageOutlined className="text-2xl bg-green-200 p-2 rounded-md cursor-pointer hover:bg-[#69ed76]" />
+                <NotificationOutlined className="text-2xl bg-green-200 p-2 rounded-md cursor-pointer hover:bg-[#69ed76]" />
                 <Avatar icon={<UserOutlined />} />
             </Flex>
         </Flex>

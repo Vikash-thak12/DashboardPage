@@ -3,8 +3,8 @@ import { Card, Flex, Typography } from "antd";
 const Banner = () => {
   return (
     <Card>
-      <Flex>
-        <Flex>
+      <Flex vertical>
+        <Flex vertical>
             <Typography.Title level={2}>
                 Create and sell Products
             </Typography.Title>

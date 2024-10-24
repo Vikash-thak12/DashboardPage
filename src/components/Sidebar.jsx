@@ -1,5 +1,6 @@
 import { Flex, Menu} from "antd"
 import { FaLeaf } from "react-icons/fa";
+import { motion } from "framer-motion"
 import {
   UserOutlined,
   ProfileOutlined,
@@ -12,9 +13,14 @@ const Sidebar = () => {
   return (
     <>
     <Flex align="center" justify="center">
-        <div className="text-[#4f6f52] my-8 font-medium">
-            <FaLeaf />
-        </div>
+        <motion.div whileHover={{
+          rotate: "-60deg",
+          transition: {
+            duration: .2,
+          }
+        }} className="text-[#4f6f52] my-8 font-medium cursor-pointer">
+            <FaLeaf className="text-5xl" />
+        </motion.div>
     </Flex>
     <Menu mode="inline" defaultActiveFirst={['1']} className="flex flex-col gap-5 font-semibold"
     items={[

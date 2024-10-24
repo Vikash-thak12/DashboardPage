@@ -1,8 +1,11 @@
+import { Flex } from "antd";
+import SideDetails from "./sidedetails";
+
 const SideContent = () => {
   return (
-    <div>
-      <h1>SideContent</h1>
-    </div>
+    <Flex vertical gap="2.3rem" style={{ width: 350}}>
+        <SideDetails />
+    </Flex>
   );
 };
 
