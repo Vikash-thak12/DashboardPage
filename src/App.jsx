@@ -1,8 +1,10 @@
-import {  Button, Layout } from "antd"
+import {  Button, Flex, Layout } from "antd"
 import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons"
 import CustomHeader from "./components/CustomHeader";
+import MainContent from "./components/MainContent";
+import SideContent from "./components/SideContent";
 const { Sider, Header, Content} = Layout;
 const App = () => {
   const [collapsed, setCollapsed] = useState(false)
@@ -22,7 +24,12 @@ const App = () => {
         <Header className="bg-[#fff] text-black pt-3">
           <CustomHeader />
         </Header>
-        <Content className="my-8 mx-6 p-5"></Content>
+        <Content className="my-8 mx-6 p-5">
+          <Flex gap="large">
+            <MainContent />
+            <SideContent />
+          </Flex>
+        </Content>
       </Layout>
     </Layout>
   );
